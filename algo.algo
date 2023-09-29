@@ -1,0 +1,34 @@
+ALGORITHM sentence
+
+VAR
+    sentence: STRING
+    i, word, char, vowel: INTEGER
+
+BEGIN
+    write("write your sentence":)
+    read(sentence)
+    FOR i FROM 0 TO sentence.lenght-1 step 1 DO
+    IF (sentencse [i]=" ") THEN
+        word:=word+1
+        // The number of words in the sentence
+    END_IF
+    IF (sentence [i]<>".") THEN
+        char:=char+1
+        // the number of characters
+    END_IF
+    SWITCH (sentence[i]) DO
+        
+        case value "a": vowel:=vowel+1 break
+        case value "e": vowel;=vowel+1 break
+        case value "i": vowel:=vowel+1 break
+        case value "u": vowel:=vowel+1 break
+        case value "y": vowel:=vowel+1 break
+        case value "o": vowel:=vowel+1 break
+        // default :The number of vowels in the sentence. 
+    END_SWITCH
+    write (word)
+    write (char)
+    write (vowel)
+
+   END_FOR
+END
